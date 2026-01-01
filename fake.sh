@@ -20,10 +20,10 @@ if ! command -v gum &> /dev/null; then
 fi
 
 echo "🔍 Memeriksa dependensi..."
-python3 -c "import qrcode, colorama" 2>/dev/null
+python3 -c "import qrcode, colorama, httpx" 2>/dev/null
 if [ $? -ne 0 ]; then
     echo "📦 Menginstall dependensi Python..."
-    pip3 install qrcode colorama 2>/dev/null || pip install qrcode colorama 2>/dev/null
+    pip3 install qrcode colorama httpx 2>/dev/null || pip install qrcode colorama httpx2>/dev/null
     if [ $? -ne 0 ]; then
         echo "❌ Gagal menginstall dependensi"
         echo "💡 Coba install manual:"
